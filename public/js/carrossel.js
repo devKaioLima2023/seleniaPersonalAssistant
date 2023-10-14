@@ -1,0 +1,2 @@
+let slideIndex=0;function changeSlide(e){showSlide(slideIndex+=e)}function showSlide(e){const l=document.getElementsByClassName("slide");e>=l.length&&(slideIndex=0),e<0&&(slideIndex=l.length-1);for(let e in l)l.hasOwnProperty(e)&&(l[e].style.display="none",l[e].classList.remove("slide-transition"));l[slideIndex].style.display="block",l[slideIndex].classList.add("slide-transition")}function autoSlide(){changeSlide(1)}showSlide(slideIndex),setInterval(autoSlide,3e3);;
+

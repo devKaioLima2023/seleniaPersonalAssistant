@@ -1,0 +1,34 @@
+#inicio{
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+#inicio > video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#mascara{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black; 
+    opacity: 0.8;
+
+}
+
+#container{
+    width: 100%;
+    margin-top: 20px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+

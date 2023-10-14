@@ -1,0 +1,61 @@
+#login-container{
+    background-color: #222;
+    position: relative;
+    top: 24%;
+    padding: 20px;
+    border: 2px solid #ffff;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 50%;
+}
+
+
+
+#login-container > form > label{
+    margin: 20px 0px 20px 0;
+    display: block;
+    color: #ffff;
+}
+
+#login-container > form > input{
+    outline: none;
+    padding: 1em;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+#login-container > form > button{
+    width: 300px;
+    display: block;
+    padding: 1em;
+    background-color: #ffff;
+    color: #000;
+    border-radius: 10px;
+    border: none;
+    margin: 20px 0px 20px 0;
+}
+
+#escrevenatela{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 50px;
+    color: #ffff;
+}
+
+
+#button-enviar{
+    display: flex;
+    width: 100%;
+}
+
+#button-enviar > button{
+    width: 300px;
+    display: block;
+    padding: 1em;
+    background-color: #ffff;
+    color: #000;
+    border-radius: 10px;
+    border: none;
+    margin: 20px 0px 20px 0;
+}

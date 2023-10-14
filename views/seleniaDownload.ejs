@@ -1,0 +1,42 @@
+<%- include("partials/header.ejs") %> <%- include("partials/navBarInicio.ejs")%>
+<div id="container">
+<h1 id="escrevenatela"></h1>
+<section id="botão">
+  <a href="/public/download/Selenia.zip" download>
+
+   
+    <i class="fa-solid fa-robot fa-flip fa-2xl" style="color: #ffffff;"></i>
+    <i class="fa-solid fa-robot fa-flip fa-2xl" style="color: #ffffff;"></i>
+    <i class="fa-solid fa-robot fa-flip fa-2xl" style="color: #ffffff;"></i>
+    <i class="fa-solid fa-robot fa-flip fa-2xl" style="color: #ffffff;"></i>
+    <i class="fa-solid fa-robot fa-flip fa-2xl" style="color: #ffffff;"></i>
+    <i class="fa-solid fa-robot fa-flip fa-2xl" style="color: #ffffff;"></i>
+    <i class="fa-solid fa-robot fa-flip fa-2xl" style="color: #ffffff;"></i>
+    <i class="fa-solid fa-robot fa-flip fa-2xl" style="color: #ffffff;"></i>
+    <i class="fa-solid fa-robot fa-flip fa-2xl" style="color: #ffffff;"></i>
+    <i class="fa-solid fa-robot fa-flip fa-2xl" style="color: #ffffff;"></i>
+    <button id="download" type="button">Download</button>
+    <i class="fa-solid fa-robot fa-flip fa-2xl" style="color: #ffffff;"></i>
+    <i class="fa-solid fa-robot fa-flip fa-2xl" style="color: #ffffff;"></i>
+    <i class="fa-solid fa-robot fa-flip fa-2xl" style="color: #ffffff;"></i>
+    <i class="fa-solid fa-robot fa-flip fa-2xl" style="color: #ffffff;"></i>
+    <i class="fa-solid fa-robot fa-flip fa-2xl" style="color: #ffffff;"></i>
+    <i class="fa-solid fa-robot fa-flip fa-2xl" style="color: #ffffff;"></i>
+    <i class="fa-solid fa-robot fa-flip fa-2xl" style="color: #ffffff;"></i>
+    <i class="fa-solid fa-robot fa-flip fa-2xl" style="color: #ffffff;"></i>
+    <i class="fa-solid fa-robot fa-flip fa-2xl" style="color: #ffffff;"></i>
+    <i class="fa-solid fa-robot fa-flip fa-2xl" style="color: #ffffff;"></i>
+
+
+</a>
+</section>
+</div>
+<script>
+  const frase = `Hello, welcome to Selenia, your personal assistant!`.split("").reverse();
+  const escrevenatela = document.querySelector("#escrevenatela");
+  const audio = new Audio("/audio/1.wav");
+  audio.play();
+  function escreveNaTela() {frase.length === 0 ? (clearInterval(loop),  fotoRederizar()) : escrevenatela.innerHTML += frase.pop();};
+  const loop = setInterval(()=>{escreveNaTela();},60);
+</script>
+<%- include("partials/footer.ejs") %>

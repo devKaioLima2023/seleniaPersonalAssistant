@@ -1,0 +1,45 @@
+<%- include("partials/header.ejs") %> <%- include("partials/navBarInicio.ejs")
+%>
+<div id="login-container">
+  <form id="login-formulario" method="post" action="/seleniadownload">
+    <label>E-mail:</label
+    ><input type="email" id="login" name="login" placeholder="E-mail" /><label
+      >Senha:</label
+    ><input
+      type="password"
+      id="senha"
+      name="senha"
+      placeholder="Senha"
+    />
+    <div id="button-enviar">
+      <button  type="submit">Login</button>
+    </div>
+  </form>
+</div>
+<% if (erro) { %>
+<script>
+  const loginFormulario = document.querySelector("#login-formulario");
+  let erroMsgDisplayed = false;
+
+  loginFormulario.addEventListener("submit", (e) => {
+    e.preventDefault();
+  });
+
+  if (!erroMsgDisplayed) {
+    msg();
+  }
+
+  function msg() {
+    const p = document.createElement("p");
+    p.style.color = "red";
+    p.style.fontSize = "20px";
+    p.style.textAlign = "center";
+    p.innerHTML = "O Email ou Senha estão incorretos!";
+    loginFormulario.appendChild(p);
+  }
+
+  setTimeout(() => {
+    window.location.href = "/login";
+  }, 3000);
+</script>
+<% } %> <%- include("partials/footer.ejs") %>

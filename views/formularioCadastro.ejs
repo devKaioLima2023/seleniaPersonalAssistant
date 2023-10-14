@@ -1,0 +1,24 @@
+<%- include("partials/header.ejs") %>
+<%- include("partials/navBarInicio.ejs")
+%>
+<div id="formulario-cadastro">
+  <form method="post" action="/salvandocadastro">
+    <label>Nome:</label
+    ><input type="text" placeholder="nome" name="nome" required /><label
+      >Sobrenome:</label
+    ><input
+      type="text"
+      placeholder="sobrenome"
+      name="sobrenome"
+      required
+    /><label>E-mail:</label
+    ><input type="email" placeholder="email" name="email" required /><label
+      >Senha:</label
+    ><input type="password" placeholder="senha" name="senha" required />
+    <div id="button-enviar">
+      <button  type="submit">Cadastrar</button>
+    </div>
+
+  </form>
+</div>
+<%- include("partials/footer.ejs") %>

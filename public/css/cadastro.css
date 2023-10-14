@@ -1,0 +1,40 @@
+#formulario-cadastro{
+    position: relative;
+    top: 12%;
+}
+#formulario-cadastro > form{
+    position: relative;
+    padding: 20px;
+    border: 2px solid #ffff;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 60%;
+    background-color: #222;
+}
+
+
+
+#formulario-cadastro > form > label{
+    margin: 20px 0px 20px 0;
+    display: block;
+    color: #ffff;
+}
+
+#formulario-cadastro > form > input{
+    outline: none;
+    padding: 1em;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+#formulario-cadastro > form > button{
+    width: 10%;
+    display: block;
+    padding: 1em;
+    background-color: #ffff;
+    color: #000;
+    border-radius: 10px;
+    border: none;
+    margin: 20px 0px 20px 0;
+}
