@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize"),
-  conexão = new Sequelize("selenia", "root", "Z16682604l", {
+  conexão = new Sequelize("nomeDataBase", "user", "password", {
     host: "localhost",
     dialect: "mysql",
   });
-conexão.authenticate().then(() => console.log("Coxeão bem sucedida!")),
-  (module.exports = conexão);
+
+module.exports = conexão;
