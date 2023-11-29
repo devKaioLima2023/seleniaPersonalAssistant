@@ -1,5 +1,5 @@
 const Sequelize = require("sequelize"),
-  conexão = new Sequelize("nomeDataBase", "user", "password", {
+  conexão = new Sequelize("selenia", "root", "root", {
     host: "localhost",
     dialect: "mysql",
   });
